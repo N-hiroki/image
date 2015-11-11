@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sample2.html</title>
+<style>
+section{padding:10px;width:840px;background-color:rgba(0,0,0,0.5);}
+#thumbs { height: 70px;  overflow: hidden;}
+#thumbs img {width: 100px;height: 54px;margin: 20px 7px 0 7px; cursor: pointer;}
+#thumbs img.selected { opacity: 0.8;alpha(opacity=80);}
+#links{ display: none; background: #fff}
+</style>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/Panel.js"></script>
+</head>
+
+<body>
+  <header>Image Panel</header>
+  <main>
+
+    <section>
+      <div>
+        <img id="lage_img" src="" alt="">
+      </div>
+      <div id="thumbs">
+        <img src="img/l1.png" alt="1だよ">
+        <img src="img/l2.png" alt="2だよ">
+        <img src="img/l3.png" alt="3だよ">
+        <img src="img/l4.png" alt="4だよ">
+        <img src="img/l5.png" alt="5だよ">
+        <img src="img/l6.png" alt="6だよ">
+        <img src="img/l7.png" alt="7だよ">
+      </div>
+    </section>
+    <section>
+      <div id="links">
+        <a id="prev" href="#">＜＜</a>
+        <a id="next" href="#">＞＞</a>
+        <a id="random" href="#">ランダム</a>
+      </div>
+    </section>
+    
+<!--
+    <section>
+        <div id="keisan">
+            <img id="left_img" src="" alt="" width="100" height="100">
+            <img id="right_img" src="" alt="" width="100" height="100">
+            <p id="ans_img"> = "ans_img"</p>
+        </div>
+    </section>
+    
+-->
+<!--
+    <section>
+        <div id="cmd">
+        <a id="tasizan" href="#">[src + alt]</a>
+            
+        </div>
+    </section>
+-->
+  </main>
+
+  <footer>フッター［現在選択してる画像は：<span id="select_img"></span>］</footer>
+
+</body>
+
+</html>
